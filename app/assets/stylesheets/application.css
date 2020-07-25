@@ -16,5 +16,25 @@
 
  * {
     background-color: bisque;
-
+    font-family: poppins;
  }
+
+ .center_div{
+   margin-top: 10%;
+   width: 100%;
+   display: flex;
+   justify-content: center;
+
+}
+
+.index_info {
+   margin: 50px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   border-style: solid;
+   width: 30%;
+   align-items: center;
+   border-radius: 25px;
+   
+}

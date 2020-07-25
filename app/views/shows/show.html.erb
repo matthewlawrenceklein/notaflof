@@ -1,8 +1,17 @@
-<h3><%= @show.date %></h3> <br>
-<h3><%= link_to @show.venue.name, venue_path(@show.venue) %></h3> <br>
-<h3><%= link_to @show.artist.name, artist_path(@show.artist) %></h3> <br>
-<h4><%= @show.artist2 %></h4>
-<h4><%= @show.artist3 %></h4>
-<h4><%= @show.artist4 %></h4>
-<h3> <img src="<%= @show.flyer_img %>"alt="">   </h3> <br>
-<h3><%= @show.youtube_link %></h3> <br>
+<div class="centering_div">
+    <div class="show_info">
+        <h2>Venue - <%= link_to @show.venue.name, venue_path(@show.venue) %></h2> 
+        <h3>Date - <%= @show.date %></h3> 
+        <h3>Headliner -<%= link_to @show.artist.name, artist_path(@show.artist) %></h3> 
+        <h4>Support - <%= @show.artist2 %>, <%= @show.artist3 %>, <%= @show.artist4 %></h4>
+    </div>
+</div>
+
+
+<div class="show_flyer">
+    <h3> <img id="flyer" src="<%= @show.flyer_img %>"alt="">   </h3> <br>
+</div>
+
+<div class="show_video">
+    <h3><%= @show.youtube_link %></h3> <br>
+</div>

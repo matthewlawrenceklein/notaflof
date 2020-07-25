@@ -25,10 +25,10 @@ ActiveRecord::Schema.define(version: 2020_07_25_023343) do
     t.string "flyer_img"
     t.string "youtube_link"
     t.integer "artist_id"
-    t.integer "artist2"
-    t.integer "artist3"
-    t.integer "artist4"
-    t.integer "artist5"
+    t.string "artist2"
+    t.string "artist3"
+    t.string "artist4"
+    t.string "artist5"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

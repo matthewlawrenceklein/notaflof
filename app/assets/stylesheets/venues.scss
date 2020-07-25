@@ -1,3 +1,21 @@
 // Place all the styles related to the venues controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+.centering_div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.venue_info {
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-style: solid;
+    width: 30%;
+    align-items: center;
+    border-radius: 25px;
+    
+}
