@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="border_style">
   <head>
     <title>Notaflof</title>
     <%= csrf_meta_tags %>
@@ -10,6 +10,15 @@
   </head>
 
   <body>
+    <div class="header">
+      <h1 id="banner1"><%= link_to 'notaflof', '/' %></h1>
+      <p id="banner2">no one turned away for lack of funds</p>
+    </div>
+    
     <%= yield %>
+
+    <div  class="footer">
+      <h4 id="banner1">notaflof</h1>
+    </div>
   </body>
 </html>
