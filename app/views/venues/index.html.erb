@@ -1,0 +1,10 @@
+<h1>Venue Page</h1>
+
+<% @venues.each do |venue|%>
+<ul>
+    <li>
+        <%= link_to "#{venue.name}, zipcode: #{venue.zipcode}", venue_path(venue) %>
+    </li>
+</ul>
+
+<% end %>

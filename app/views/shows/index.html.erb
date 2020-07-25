@@ -1,0 +1,13 @@
+<h1>Recent Shows</h1>
+
+<% @shows.each do |show| %>
+<div>
+    <ul>
+        <li>
+            <%= link_to "#{show.date} -- #{show.venue.name} -- #{show.artist.name}, #{show.artist2}", show_path(show)  %>
+        </li>
+    </ul>
+</div>
+
+
+<% end %>

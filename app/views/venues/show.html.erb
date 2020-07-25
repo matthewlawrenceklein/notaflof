@@ -1,0 +1,13 @@
+<h1><%= @venue.name %></h1>
+<h3><%= @venue.zipcode %></h3>
+
+<% @venue.shows.each do |show| %>
+<% artist = Artist.all.find { |a| a.id == show.artist_id}%>
+<div>
+    <ul>
+        <li>
+            <%= link_to "#{show.date} - #{artist.name}, #{show.artist2}, #{show.artist3}, #{show.artist4}, #{show.artist5}", show_path(show) %>
+        </li>
+    </ul>
+
+<% end %>

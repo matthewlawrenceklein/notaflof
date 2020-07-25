@@ -1,0 +1,8 @@
+<h3><%= @show.date %></h3> <br>
+<h3><%= link_to @show.venue.name, venue_path(@show.venue) %></h3> <br>
+<h3><%= link_to @show.artist.name, artist_path(@show.artist) %></h3> <br>
+<h4><%= @show.artist2 %></h4>
+<h4><%= @show.artist3 %></h4>
+<h4><%= @show.artist4 %></h4>
+<h3> <img src="<%= @show.flyer_img %>"alt="">   </h3> <br>
+<h3><%= @show.youtube_link %></h3> <br>
