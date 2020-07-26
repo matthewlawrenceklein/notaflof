@@ -10,15 +10,18 @@
   </head>
 
   <body>
-    <div class="header">
-      <h1 id="banner1"><%= link_to 'notaflof', '/' %></h1>
-      <p id="banner2">no one turned away for lack of funds</p>
-    </div>
-    
+    <div class="topnav">
+      <a class="active" href="/">Home</a>
+      <a href="<%= venues_path %>">Venues</a>
+      <a href="<%= shows_path %>">Shows</a>
+      <a href="<%= artists_path %>">Artists</a>
+      <a href="" id="right_nav">Sign-in</a>
+      <a href=""id="right_nav">Signup</a>
+    </div>  
+    <div><h2 id="title">notaflof - a diy show/venue repository</h2></div>
     <%= yield %>
-
-    <div  class="footer">
-      <h4 id="banner1">notaflof</h1>
+    <div class="footer">
+      <p id="footer_text">notaflof - a diy show/venue repository</p>
     </div>
   </body>
 </html>

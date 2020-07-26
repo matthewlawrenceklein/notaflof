@@ -2,6 +2,9 @@
 <div class="centering_div">
     <div class="artist_info">
         <h1>Artists</h1>
+        <div>
+        <%= button_to 'Add Artist', new_artist_path, method: :get %>
+        </div>
         <ul>
             <% @artists.each do |artist| %>
                 <li>

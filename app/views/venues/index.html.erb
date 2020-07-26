@@ -2,6 +2,9 @@
 <div class="centering_div">
     <div class="venue_info">
         <h1>Venue Page</h1>
+        <div>
+            <%= button_to 'Add Venue', new_venue_path, method: :get %>
+        </div>
         <% @venues.each do |venue|%>
             <ul>
                 <li>

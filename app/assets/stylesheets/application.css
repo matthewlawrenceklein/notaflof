@@ -18,40 +18,48 @@
     font-family: poppins;
     background-color: bisque;
  }
+ 
 
- #banner1 {
-   background-color: #1abc9c;;
- }
-
- #banner2 {
-   background-color: #1abc9c;;
+.topnav {
+   background-color: #1abc9c;
+   overflow: hidden;
  }
  
-/* .border_style {
-   border-left: 70px solid cadetblue;
-   border-right: 70px solid cadetblue;
-} */
-
-.header {
-   padding: 40px;
-   text-align: center;
-   background: #1abc9c;
+ /* Style the links inside the navigation bar */
+ .topnav a {
+   float: left;
+   color: #f2f2f2;
    background-color: #1abc9c;
-   color: white;
-   font-size: 30px;
-}
-
-.footer {
-   position: fixed;
-   bottom: 0;
-   width: 100%;
-   background-color: #1abc9c;
-   color: white;
    text-align: center;
+   padding: 14px 16px;
+   text-decoration: none;
+   font-size: 17px;
  }
 
+ #right_nav {
+   float: right;
+ }
+
+ #title{
+   flex: auto;
+   text-align: center;
+}
+ 
+ /* Change the color of links on hover */
+ .topnav a:hover {
+   background-color: #ddd;
+   color: black;
+ }
+ 
+ /* Add a color to the active/current link */
+ .topnav a.active {
+   background-color: #4CAF50;
+   color: white;
+ }
+
+
  .center_div{
-   margin-top: 20px;
+   margin-top: 10px;
    width: 100%;
    display: flex;
    justify-content: center;
@@ -59,7 +67,7 @@
 }
 
 .index_info {
-   margin: 30px;
+   margin: 10px;
    display: flex;
    flex-direction: column;
    justify-content: center;
@@ -69,3 +77,16 @@
    border-radius: 25px;
 }
 
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #1abc9c;
+   color: white;
+   text-align: center;
+ }
+
+ #footer_text {
+  background-color:  #1abc9c;
+ }
