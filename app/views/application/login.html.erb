@@ -1,0 +1,15 @@
+  <div class="centering_div">
+    <div class="artist_info">       
+    <%= form_for @user  do |f| %>
+    <br>
+        <div class="form_div"><%= f.label :username %></div>
+        <div class="form_div"><%= f.text_field :username %></div>
+        <br>
+        <div class="form_div"><%= f.label :password %></div>
+        <div class="form_div"><%= f.password_field :password %></div>
+        <br>
+        <div class="form_div"><%= f.submit %></div>
+        <br>
+    <% end %>
+    </div>
+</div>

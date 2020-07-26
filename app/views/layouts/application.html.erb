@@ -15,8 +15,8 @@
       <a href="<%= venues_path %>">Venues</a>
       <a href="<%= shows_path %>">Shows</a>
       <a href="<%= artists_path %>">Artists</a>
-      <a href="" id="right_nav">Sign-in</a>
-      <a href=""id="right_nav">Signup</a>
+      <a href="<%= '/login' %>" id="right_nav">Login</a>
+      <a href="<%= new_user_path %>"id="right_nav">Signup</a>
     </div>  
     <div><h2 id="title">notaflof - a diy show/venue repository</h2></div>
     <%= yield %>
